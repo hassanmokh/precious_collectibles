@@ -1,0 +1,4 @@
+2023-12-10 22:00:22,520  autoreload autoreload.py run_with_reloader 668 Watching for file changes with StatReloader
+2023-12-10 22:00:22,520  autoreload autoreload.py run_with_reloader 668 Watching for file changes with StatReloader
+2023-12-10 22:00:53,959  autoreload autoreload.py trigger_reload 266 /Users/hassanmokh/Desktop/work/upwork/metal/precious_collectibles/settings/base.py changed, reloading.
+2023-12-10 22:00:53,959  autoreload autoreload.py trigger_reload 266 /Users/hassanmokh/Desktop/work/upwork/metal/precious_collectibles/settings/base.py changed, reloading.
