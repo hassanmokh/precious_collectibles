@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+django-cors-headers = "*"
+django-filter = "*"
+djangorestframework = "*"
+gunicorn = "*"
+psycopg-binary = "*"
+django-rest-knox = "*"
+pillow = "*"
+django-rest-passwordreset = "*"
+celery = "*"
+redis = "*"
+drf-yasg = "*"
+coreapi = "*"
+
+[dev-packages]
+mixer = "*"
+pytest = "*"
+pytest-django = "*"
+pytest-cov = "*"
+
+[requires]
+python_version = "3.11"

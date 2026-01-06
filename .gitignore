@@ -1,0 +1,14 @@
+.coverage
+celerybeat-schedule.db
+logs
+!media/
+media/*
+!media/privacy.jpeg
+.pytest_cache
+0*.py
+.idea
+htmlcov/*
+*.pyc
+**__pycache__
+*.sqlite3
+.vscode

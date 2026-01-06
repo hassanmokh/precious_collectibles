@@ -1,0 +1,57 @@
+version: "3.9"
+
+services:
+
+  web:
+    container_name: precious_collectibles_web_container
+    build: .
+    restart: on-failure
+    command: >
+      sh -c "
+        python manage.py makemigrations --settings=precious_collectibles.settings.local;
+        python manage.py migrate --settings=precious_collectibles.settings.local;
+        python manage.py runserver 0.0.0.0:8000 --settings=precious_collectibles.settings.local;
+
+      "
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - precious_collectibles_data:/usr/src/app
+      - ./logs:/usr/src/app/logs
+
+
+
+  celery:
+    container_name: precious_collectibles_celery_container
+    build: .
+    restart: on-failure
+    command: >
+      sh -c "
+        celery -A precious_collectibles.settings.celery worker --loglevel=INFO --logfile=logs/celery.log -B;
+      "
+
+    volumes:
+      - ./logs:/usr/src/app/logs
+
+    depends_on:
+      - web
+
+    environment:
+      - DJANGO_SETTINGS_MODULE=precious_collectibles.settings.local
+
+    network_mode: host
+
+  redis:
+    image: bitnami/redis:6.2.8
+    container_name: redis
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - REDIS_PORT_NUMBER=6379
+    ports:
+      - "6379:6379"
+
+
+
+volumes:
+  precious_collectibles_data:

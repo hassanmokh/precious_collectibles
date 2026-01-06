@@ -1,0 +1,6 @@
+.coverage
+.coveragerc
+.idea
+.pytest_cache
+.DS_Store
+docker-compose.yml
