@@ -1,8 +1,0 @@
-2023-12-10 22:00:54,536  autoreload autoreload.py run_with_reloader 668 Watching for file changes with StatReloader
-2023-12-10 22:00:54,536  autoreload autoreload.py run_with_reloader 668 Watching for file changes with StatReloader
-2023-12-10 22:01:13,489  autoreload autoreload.py trigger_reload 266 /Users/hassanmokh/Desktop/work/upwork/metal/precious_collectibles/settings/base.py changed, reloading.
-2023-12-10 22:01:13,489  autoreload autoreload.py trigger_reload 266 /Users/hassanmokh/Desktop/work/upwork/metal/precious_collectibles/settings/base.py changed, reloading.
-2023-12-10 22:01:14,136  autoreload autoreload.py run_with_reloader 668 Watching for file changes with StatReloader
-2023-12-10 22:01:14,136  autoreload autoreload.py run_with_reloader 668 Watching for file changes with StatReloader
-2023-12-10 22:01:16,523  autoreload autoreload.py trigger_reload 266 /Users/hassanmokh/Desktop/work/upwork/metal/precious_collectibles/settings/local.py changed, reloading.
-2023-12-10 22:01:16,523  autoreload autoreload.py trigger_reload 266 /Users/hassanmokh/Desktop/work/upwork/metal/precious_collectibles/settings/local.py changed, reloading.
