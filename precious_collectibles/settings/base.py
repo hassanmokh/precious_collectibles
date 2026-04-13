@@ -165,14 +165,14 @@ REST_KNOX = {
 }
 
 # validate domain email
-ABSTRACT_API_KEY = '68afa4c5821c45359c6d7fefbd5b5092'
+ABSTRACT_API_KEY = ''
 ABSTRACT_BASE_URL = f'https://emailvalidation.abstractapi.com/v1/?api_key={ABSTRACT_API_KEY}&'
 
 APP_NAME = 'NAGM ED-DIN'
 EXPIRE_VERIFICATION_CODE_MINUTES = 10
 
 # email config
-EMAIL_HOST_USER = 'djangodeveloper123@gmail.com'
+EMAIL_HOST_USER = ''
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
@@ -180,7 +180,7 @@ EMAIL_USE_SSL = False
 DEFAULT_FROM_EMAIL = 'djangodeveloper123@gmail.com'
 SERVER_EMAIL = DEFAULT_FROM_EMAIL
 EMAIL_CONTACT_US = DEFAULT_FROM_EMAIL
-EMAIL_HOST_PASSWORD = 'mltrsdivlvpoflwl'
+EMAIL_HOST_PASSWORD = ''
 
 # reset password configuration
 DJANGO_REST_PASSWORDRESET_TOKEN_CONFIG = {
